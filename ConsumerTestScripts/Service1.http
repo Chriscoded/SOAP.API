@@ -1,0 +1,11 @@
+#uses httpyac extension
+
+POST http://localhost:5176/Service1
+Content-Type: application/xml
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://some.com/service/">
+    <soap:Header/>
+    <soap:Body>
+        <ser:GetWeatherForcast/>
+    </soap:Body>
+</soap:Envelope>
+
